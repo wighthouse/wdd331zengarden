@@ -4,16 +4,18 @@
 
 // color palette - these colors will be the color swatches of the Colors section
 
-$color-1: #5f8ee4; // Yale Blue
-$color-2: #19191a; // Dark Blue
-$color-3: #e4655f; // Yellow
-$color-4: #e6e6e6; // Grape
-$color-5: #ffffff; // Red
+$color-1: #ffffff; // White
+$color-2: #00000c; // Dark Gray
+$blue-splat: #1446a0; // Yale Blue
+$green-splat: #147a6c; // Deep Green-Cyan
+$yellow-splat: #fce028; // Banana Yellow
+$purple-splat: #700c9e; // Grape
+$red-splat: #db2020; // Maximum Red
 
 // additional colors
 
-$success: #6fce72; // green
-$alert: $color-3; // red
+$success: $green-splat; // green
+$alert: $red-splat; // red
 
 // fonts
 $primary-font: 'Lobster Two', serif;
@@ -27,7 +29,7 @@ xBackground
 
 body {
   /* this is the page background */
-  background-color: $color-5;
+  background-color: $color-1;
 }
 
 /* -------------------------------- 
