@@ -54,377 +54,6 @@ table {
 
 /* -------------------------------- 
 
-xBackground 
-
--------------------------------- */
-body {
-  /* this is the page background */
-  background-color: #ffffff;
-}
-
-/* -------------------------------- 
-
-xPatterns
-
--------------------------------- */
-.cd-box {
-  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid #fce028;
-  border-radius: 3px;
-  background: #ffffff;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 6px;
-}
-
-/* -------------------------------- 
-
-xNavigation 
-
--------------------------------- */
-header {
-  background-color: #00000c;
-}
-
-.cd-logo {
-  /* logo box style */
-  background-color: #1446a0;
-  width: 120px;
-}
-@media only screen and (min-width: 1024px) {
-  .cd-logo {
-    width: 180px;
-  }
-}
-
-.cd-main-nav {
-  /* main navigation background color - full screen on small devices */
-  background: #00000c;
-}
-.cd-main-nav li a {
-  color: #ffffff;
-  border-color: #000026;
-}
-@media only screen and (min-width: 1024px) {
-  .cd-main-nav li a {
-    color: #0000d8;
-  }
-  .cd-main-nav li a.selected {
-    color: #ffffff;
-    box-shadow: 0 2px 0 #1446a0;
-  }
-  .cd-main-nav li a:hover {
-    color: #ffffff;
-  }
-}
-
-.cd-nav-trigger span {
-  /* hamburger menu */
-  background-color: #ffffff;
-}
-.cd-nav-trigger span::before, .cd-nav-trigger span::after {
-  /* upper and lower lines */
-  background-color: #ffffff;
-}
-
-.nav-is-visible .cd-nav-trigger span {
-  /* hide line in the center on mobile when nav is visible */
-  background-color: rgba(255, 255, 255, 0);
-}
-.nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
-  /* preserve visibility of upper and lower lines - close icon */
-  background-color: white;
-}
-
-.cd-download {
-  /* download button top-right visible on big devices */
-  background-color: #00003f;
-}
-.no-touch .cd-download:hover {
-  background-color: #000059;
-}
-.cd-download span {
-  /* tooltip */
-  background: #1446a0;
-  color: #ffffff;
-}
-.cd-download span::before {
-  /* right arrow color */
-  border-color: #1446a0;
-}
-
-/* -------------------------------- 
-
-xPage title 
-
--------------------------------- */
-main > h1 {
-  color: #00000c;
-}
-@media only screen and (min-width: 1600px) {
-  main > h1 {
-    /* title goes into the header on big devices */
-    color: #ffffff;
-  }
-}
-
-/* -------------------------------- 
-
-xTypography 
-
--------------------------------- */
-h1,
-h2 {
-  font-family: "Lobster Two", serif;
-  color: #00000c;
-}
-
-h1 {
-  font-size: 2.4rem;
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 0 0 0.4em;
-}
-@media only screen and (min-width: 768px) {
-  h1 {
-    font-size: 3.2rem;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  h1 {
-    font-size: 4rem;
-  }
-}
-
-h2 {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 1em 0;
-}
-@media only screen and (min-width: 768px) {
-  h2 {
-    font-size: 1.8rem;
-    margin: 1em 0 1.4em;
-  }
-}
-
-section > h2::before {
-  /* number before each section title */
-  color: #d5b903;
-}
-
-p {
-  font-size: 1.4rem;
-  line-height: 1.4;
-  color: #00008c;
-}
-p a {
-  color: #1446a0;
-  text-decoration: underline;
-}
-@media only screen and (min-width: 768px) {
-  p {
-    font-size: 1.6rem;
-    line-height: 1.6;
-  }
-}
-
-/* -------------------------------- 
-
-xButtons 
-
--------------------------------- */
-.btn {
-  border: none;
-  box-shadow: none;
-  border-radius: 0.25em;
-  font-size: 1.4rem;
-  font-family: "Lobster Two", serif;
-  color: #ffffff;
-  padding: 0.6em 2.2em;
-  cursor: pointer;
-  background: #1446a0;
-}
-.btn:focus {
-  outline: none;
-}
-.no-touch .btn:hover {
-  background: #1750b7;
-}
-.btn.btn-success {
-  background: #147a6c;
-}
-.no-touch .btn.btn-success:hover {
-  background: #18907f;
-}
-.btn.btn-alert {
-  background: #db2020;
-}
-.no-touch .btn.btn-alert:hover {
-  background: #e13333;
-}
-.btn.btn-outline {
-  color: #1446a0;
-  background: transparent;
-  box-shadow: inset 0 0 0 1px #1446a0;
-}
-.no-touch .btn.btn-outline:hover {
-  color: #ffffff;
-  background: #1446a0;
-}
-@media only screen and (min-width: 768px) {
-  .btn {
-    font-size: 1.6rem;
-  }
-}
-
-.cd-buttons .cd-box:nth-of-type(2) span {
-  /* CSS class name color */
-  color: #1446a0;
-}
-
-/* -------------------------------- 
-
-xIcons 
-
--------------------------------- */
-.cd-icons li {
-  /* icons size */
-  width: 32px;
-  height: 32px;
-}
-
-/* -------------------------------- 
-
-xForm 
-
--------------------------------- */
-input[type=text],
-select {
-  border: 1px solid #fce028;
-  border-radius: 0.25em;
-  background: #ffffff;
-}
-input[type=text]:focus,
-select:focus {
-  outline: none;
-}
-
-input[type=text] {
-  padding: 0.6em 1em;
-  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
-}
-input[type=text].success {
-  border-color: #147a6c;
-  box-shadow: 0 0 6px rgba(20, 122, 108, 0.2);
-}
-input[type=text].alert {
-  border-color: #db2020;
-  box-shadow: 0 0 6px rgba(219, 32, 32, 0.2);
-}
-input[type=text]:focus {
-  border-color: #1446a0;
-  box-shadow: 0 0 6px rgba(20, 70, 160, 0.2);
-}
-
-input[type=radio],
-input[type=checkbox] {
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-}
-
-.radio-label,
-.checkbox-label {
-  padding-left: 24px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.radio-label::before, .radio-label::after,
-.checkbox-label::before,
-.checkbox-label::after {
-  /* custom radio and check boxes */
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.radio-label::before,
-.checkbox-label::before {
-  left: 0;
-  border: 1px solid #fce028;
-  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
-}
-.radio-label::after,
-.checkbox-label::after {
-  left: 3px;
-  background: url("../assets/form/icon-check.svg") no-repeat center center;
-  display: none;
-}
-
-.radio-label::before {
-  border-radius: 50%;
-}
-
-.checkbox-label::before {
-  border-radius: 3px;
-}
-
-input[type=radio]:checked + label::before,
-input[type=checkbox]:checked + label::before {
-  background-color: #00000c;
-  border: none;
-  box-shadow: none;
-}
-
-input[type=radio]:checked + label::after,
-input[type=checkbox]:checked + label::after {
-  display: block;
-}
-
-.cd-select::after {
-  /* switcher arrow for select element */
-  content: "";
-  position: absolute;
-  z-index: 1;
-  right: 14px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display: block;
-  width: 16px;
-  height: 16px;
-  background: url("../assets/form/icon-select.svg") no-repeat center center;
-  pointer-events: none;
-}
-
-select {
-  position: relative;
-  padding: 0.6em 2em 0.6em 1em;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-}
-
-/* -------------------------------- 
-
 xBasic style
 
 -------------------------------- */
@@ -446,6 +75,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
+  background-color: #ffffff;
 }
 
 a {
@@ -727,9 +357,16 @@ main {
   margin: 0 auto;
   padding: 50px 0;
 }
-main > h1 {
+main h1 {
   text-align: center;
   margin: 3em 0;
+  color: #00000c;
+}
+@media only screen and (min-width: 1600px) {
+  main {
+    /* title goes into the header on big devices */
+    color: #ffffff;
+  }
 }
 @media only screen and (min-width: 1024px) {
   main {
@@ -1044,6 +681,207 @@ section:nth-of-type(10) h2::before {
 }
 .no-csstransitions .cd-select::after {
   display: none;
+}
+
+.btn {
+  border: none;
+  box-shadow: none;
+  border-radius: 0.25em;
+  font-size: 1.4rem;
+  font-family: "Lobster Two", serif;
+  color: #ffffff;
+  padding: 0.6em 2.2em;
+  cursor: pointer;
+  background: #1446a0;
+}
+.btn:focus {
+  outline: none;
+}
+.no-touch .btn:hover {
+  background: #1750b7;
+}
+.btn.btn-success {
+  background: #147a6c;
+}
+.no-touch .btn.btn-success:hover {
+  background: #18907f;
+}
+.btn.btn-alert {
+  background: #db2020;
+}
+.no-touch .btn.btn-alert:hover {
+  background: #e13333;
+}
+.btn.btn-outline {
+  color: #1446a0;
+  background: transparent;
+  box-shadow: inset 0 0 0 1px #1446a0;
+}
+.no-touch .btn.btn-outline:hover {
+  color: #ffffff;
+  background: #1446a0;
+}
+@media only screen and (min-width: 768px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+}
+
+.cd-buttons .cd-box:nth-of-type(2) span {
+  /* CSS class name color */
+  color: #1446a0;
+}
+
+header {
+  background-color: #00000c;
+}
+
+.cd-logo {
+  /* logo box style */
+  background-color: #1446a0;
+  width: 120px;
+}
+@media only screen and (min-width: 1024px) {
+  .cd-logo {
+    width: 180px;
+  }
+}
+
+.cd-main-nav {
+  /* main navigation background color - full screen on small devices */
+  background: #00000c;
+}
+.cd-main-nav li a {
+  color: #ffffff;
+  border-color: #000026;
+}
+@media only screen and (min-width: 1024px) {
+  .cd-main-nav li a {
+    color: #0000d8;
+  }
+  .cd-main-nav li a.selected {
+    color: #ffffff;
+    box-shadow: 0 2px 0 #1446a0;
+  }
+  .cd-main-nav li a:hover {
+    color: #ffffff;
+  }
+}
+
+.cd-nav-trigger span {
+  /* hamburger menu */
+  background-color: #ffffff;
+}
+.cd-nav-trigger span::before, .cd-nav-trigger span::after {
+  /* upper and lower lines */
+  background-color: #ffffff;
+}
+
+.nav-is-visible .cd-nav-trigger span {
+  /* hide line in the center on mobile when nav is visible */
+  background-color: rgba(255, 255, 255, 0);
+}
+.nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
+  /* preserve visibility of upper and lower lines - close icon */
+  background-color: white;
+}
+
+.cd-download {
+  /* download button top-right visible on big devices */
+  background-color: #00003f;
+}
+.no-touch .cd-download:hover {
+  background-color: #000059;
+}
+.cd-download span {
+  /* tooltip */
+  background: #1446a0;
+  color: #ffffff;
+}
+.cd-download span::before {
+  /* right arrow color */
+  border-color: #1446a0;
+}
+
+.design-name {
+  display: table;
+  font-size: 1.5em;
+  font-family: "Lobster Two", serif;
+}
+
+.designer-name {
+  margin: 0 0 1em 0;
+  display: inline-block;
+}
+
+.view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {
+  display: inline-flex;
+  font-family: "Lobster Two", serif;
+}
+
+.cd-box {
+  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
+  border: 1px solid #fce028;
+  border-radius: 3px;
+  background: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 6px;
+}
+
+h1,
+h2 {
+  font-family: "Lobster Two", serif;
+  color: #00000c;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+    margin: 1em 0 1.4em;
+  }
+}
+
+section > h2::before {
+  /* number before each section title */
+  color: #d5b903;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #00008c;
+}
+p a {
+  color: #1446a0;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
 }
 
 /*# sourceMappingURL=style-guide.css.map */

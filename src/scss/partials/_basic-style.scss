@@ -19,7 +19,8 @@ html {
 
 body {
 	font-size: 1.6rem;
-	font-family: $primary-font;
+  font-family: $primary-font;
+  background-color: $color-5;
 }
 
 a {
@@ -42,8 +43,8 @@ header {
 	top: 0;
 	left: 0;
 	box-shadow: 0 1px 1px rgba(#000, .1);
-	z-index: 10;
-
+  z-index: 10;
+  
 	nav {
 		display: inline-block;
 	}
@@ -266,9 +267,14 @@ main {
 	margin: 0 auto;
 	padding: 50px 0;
 
-	> h1 {
+	h1 {
 		text-align: center;
-		margin: 3em 0;
+    margin: 3em 0;
+    color: $color-2;
+  }
+  @include MQ(L) {
+    /* title goes into the header on big devices */
+    color: $color-5;
 	}
 
 	@include MQ(M) {
