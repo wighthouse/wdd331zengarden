@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Open+Sans&display=swap');
+//variables
+$font-header: "Lobster Two", serif;
+$font-main: "open Sans", 'Arial', sans-serif;
+$blue: #1446a0;
+$green: #147a6c;
+$yellow: #fce028;
+$purple: #700c9e;
+$red: #db2020;
+$white: #e6e6e6ff;
+$black: #00000c;  
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font-family: $font-main;
+	color: $black; 
+  background: transparent; 
+	margin: 0 auto; 
+  padding: 0;
+  width: 85%;
+	}
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	}
+h3 { 
+	font: 1.5em $font-header;
+	color: $blue;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: $green;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+	}
+abbr {
+	}
+
+/* specific divs */
+.page-wrapper { 
+
+	}
+
+.intro { 
+
+	}
+header {
+  //background: #fff url(file:///C:/Users/Renada/wdd331/drips.svg) repeat-x 100%;
+  background: $blue;
+}
+header h1 { 
+  font: 3em $font-header;
+  text-align: center;
+  color: $white;
+  margin: 0 auto;
+  padding: 20px 0 10px 0;
+}
+header h2 { 
+  font: 1.5em $font-main;
+  color: $white;
+  text-align: center;
+  margin: 0 auto;
+  height: 6.2em;
+}
+.summary {
+	
+	}
+.summary p:first-child {
+  font: 1.25em $font-header; 
+  padding: 20px;
+  }
+.summary p:nth-child(2) {
+  width: 40%;
+  background: $purple;
+  border-radius: 50%;
+  color: $white;
+  margin: 50px auto;
+  padding: 40px 0 0;
+}
+.preamble {
+  }
+.explanation {
+  background: $red;
+  color: $white;
+  h3{
+    color: $white;
+  }
+}
+.supporting {	
+	}
+
+footer {  
+	}
+footer a:link, footer a:visited { 
+	}
+
+.sidebar {
+	}
+.sidebar .wrapper { 
+	font-family: $font-main; 
+	}
+.sidebar h3.select { 
+	}
+.sidebar h3.archives { 
+	}
+.sidebar h3.resources { 
+	}
+
+
+.sidebar ul {
+	margin: 0;
+  padding: 0;
+  list-style-type: none;
+	}
+.sidebar li {
+	}
+.sidebar li a:link {
+	}
+.sidebar li a:visited {
+	}
+.design-name {
+  display: table;
+  font-size: 1.5em;
+  font-family: $font-header;
+}
+.designer-name {
+  margin: 0 0 1em 0;
+  display: inline-block;
+}
+.zen-resources ul {
+  display: flex;
+  font-size: .75em;
+}
+.extra1 {
+  }
+// medium styles
+@media screen and (min-width: 32em) {
+  .design-selection ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 40px;
+  }
+}

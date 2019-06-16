@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two|Open+Sans&display=swap");
+/* basic elements */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "open Sans", "Arial", sans-serif;
+  color: #00000c;
+  background: transparent;
+  margin: 0 auto;
+  padding: 0;
+  width: 85%;
+}
+
+p {
+  margin-top: 0;
+  text-align: justify;
+}
+
+h3 {
+  font: 1.5em "Lobster Two", serif;
+  color: #1446a0;
+}
+
+a:link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #147a6c;
+}
+
+a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: #D4CDDC;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+  color: #9685BA;
+}
+
+/* specific divs */
+header {
+  background: #1446a0;
+}
+
+header h1 {
+  font: 3em "Lobster Two", serif;
+  text-align: center;
+  color: #e6e6e6ff;
+  margin: 0 auto;
+  padding: 20px 0 10px 0;
+}
+
+header h2 {
+  font: 1.5em "open Sans", "Arial", sans-serif;
+  color: #e6e6e6ff;
+  text-align: center;
+  margin: 0 auto;
+  height: 6.2em;
+}
+
+.summary p:first-child {
+  font: 1.25em "Lobster Two", serif;
+  padding: 20px;
+}
+
+.summary p:nth-child(2) {
+  width: 40%;
+  background: #700c9e;
+  border-radius: 50%;
+  color: #e6e6e6ff;
+  margin: 50px auto;
+  padding: 40px 0 0;
+}
+
+.explanation {
+  background: #db2020;
+  color: #e6e6e6ff;
+}
+.explanation h3 {
+  color: #e6e6e6ff;
+}
+
+.sidebar .wrapper {
+  font-family: "open Sans", "Arial", sans-serif;
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.design-name {
+  display: table;
+  font-size: 1.5em;
+  font-family: "Lobster Two", serif;
+}
+
+.designer-name {
+  margin: 0 0 1em 0;
+  display: inline-block;
+}
+
+.zen-resources ul {
+  display: flex;
+  font-size: 0.75em;
+}
+
+@media screen and (min-width: 32em) {
+  .design-selection ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
