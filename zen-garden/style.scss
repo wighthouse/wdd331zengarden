@@ -25,7 +25,7 @@ body {
 	}
 p { 
 	margin-top: 0; 
-	text-align: justify;
+	text-align: left;
 	}
 h3 { 
 	font: 1.5em $font-header;
@@ -50,12 +50,13 @@ abbr {
 
 /* specific divs */
 .page-wrapper { 
-
-	}
+  display: flex;
+  flex-flow: column;
+}
 
 .intro { 
 
-	}
+}
 header {
   //background: #fff url(file:///C:/Users/Renada/wdd331/drips.svg) repeat-x 100%;
   background: $blue;
@@ -75,7 +76,6 @@ header h2 {
   height: 6.2em;
 }
 .summary {
-	
 	}
 .summary p:first-child {
   font: 1.25em $font-header; 
@@ -99,25 +99,24 @@ header h2 {
   }
 }
 .supporting {	
-	}
+}
 
 footer {  
-	}
+}
 footer a:link, footer a:visited { 
-	}
+}
 
 .sidebar {
-	}
+}
 .sidebar .wrapper { 
-	font-family: $font-main; 
-	}
+font-family: $font-main; 
+}
 .sidebar h3.select { 
-	}
+}
 .sidebar h3.archives { 
-	}
+}
 .sidebar h3.resources { 
-	}
-
+}
 
 .sidebar ul {
 	margin: 0;
@@ -129,19 +128,46 @@ footer a:link, footer a:visited {
 .sidebar li a:link {
 	}
 .sidebar li a:visited {
-	}
+}
+.requirements p:last-child {
+  font: 1.5em $font-header;
+  padding: 10px;
+  background: $purple;
+  color: $white;
+  text-align: center;
+}
+.design-selection {
+}
 .design-name {
   display: table;
-  font-size: 1.5em;
-  font-family: $font-header;
+  font: 1.5em $font-header;
 }
 .designer-name {
   margin: 0 0 1em 0;
   display: inline-block;
 }
-.zen-resources ul {
-  display: flex;
-  font-size: .75em;
+.zen-resources {
+  ul {
+    display: flex;
+    font-size: .75em;
+  }
+  h3 {
+    display: none;
+  }
+}
+.design-archives h3, .design-archives ul li:first-child {
+  display: none;
+}
+.design-archives ul li:last-child {
+  font: 2em $font-header;
+  width: 70%;
+  height: 100px;
+  background: $yellow;
+  border-radius: 50%;
+  color: $white;
+  margin: 50px auto;
+  padding: 40px 0 0;
+  text-align: center;
 }
 .extra1 {
   }
