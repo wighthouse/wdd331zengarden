@@ -1,17 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster+Two|Open+Sans&display=swap");
-/* basic elements */
-html {
+* {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
+/* basic elements */
 body {
   font-family: "open Sans", "Arial", sans-serif;
   color: #00000c;
-  background: transparent;
-  margin: 0 auto;
-  padding: 0;
-  width: 85%;
+  width: 100%;
+  /*background-image: url(/background.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-blend-mode: lighten;*/
 }
 
 p {
@@ -21,19 +23,20 @@ p {
 
 h3 {
   font: 1.5em "Lobster Two", serif;
-  color: #1446a0;
+  color: #00000c;
+  padding: 1.5em 0 0.25em 0;
 }
 
 a:link {
   font-weight: bold;
   text-decoration: none;
-  color: #147a6c;
+  color: #00000c;
 }
 
 a:visited {
   font-weight: bold;
   text-decoration: none;
-  color: #D4CDDC;
+  color: #147a6c;
 }
 
 a:hover, a:focus, a:active {
@@ -43,49 +46,112 @@ a:hover, a:focus, a:active {
 
 /* specific divs */
 .page-wrapper {
+  margin: 0 auto;
   display: flex;
   flex-flow: column;
 }
 
+/* .intro { 
+ grid-column: 1/3;
+} */
 header {
-  background: #1446a0;
+  margin: 0 auto;
+  background: #fff url(drips.svg) repeat-x 100%;
+  background-size: contain;
+  height: 15em;
+  text-align: center;
 }
-
 header h1 {
-  font: 3em "Lobster Two", serif;
-  text-align: center;
+  padding-top: 0.5em;
+  font: 1.25em "open Sans", "Arial", sans-serif;
   color: #e6e6e6ff;
-  margin: 0 auto;
-  padding: 20px 0 10px 0;
+}
+header h1::after {
+  display: block;
+  padding-top: 0.5em;
+  font: 2.25em "Lobster Two", serif;
+  color: #e6e6e6ff;
+  content: "The Painted Garden";
+}
+header h2 {
+  padding-top: 0.5em;
+  font: 1.25em "open Sans", "Arial", sans-serif;
+  color: #e6e6e6ff;
 }
 
-header h2 {
-  font: 1.5em "open Sans", "Arial", sans-serif;
-  color: #e6e6e6ff;
-  text-align: center;
+.preamble, .participation, .benefits, .requirements {
+  width: 90%;
   margin: 0 auto;
-  height: 6.2em;
 }
 
 .summary p:first-child {
-  font: 1.25em "Lobster Two", serif;
+  font: 1em "open Sans", "Arial", sans-serif;
   padding: 20px;
+  text-align: center;
 }
 
 .summary p:nth-child(2) {
   width: 40%;
-  background: #700c9e;
-  border-radius: 50%;
+  margin: 0 auto;
+  background: #fff url(splat.svg) no-repeat center;
+  background-size: cover;
+  padding: 90px;
   color: #e6e6e6ff;
-  margin: 50px auto;
-  padding: 40px 0 0;
+  text-align: center;
 }
 
 .explanation {
-  background: #db2020;
+  background: #fff url(red-drips.svg) no-repeat center;
+  background-size: cover;
+  padding: 20px 20px 90px;
   color: #e6e6e6ff;
+  margin-top: 2em;
 }
 .explanation h3 {
+  padding: 0 0 0.25em 0;
+  color: #e6e6e6ff;
+}
+
+.requirements p:last-child {
+  font-weight: bold;
+  text-align: center;
+  padding: 2em;
+}
+
+footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  font-size: 0.5em;
+}
+footer .zen-validate-html {
+  background: #fff url(blue-splat.svg) no-repeat center;
+  padding: 2.75em;
+  background-size: contain;
+  color: #e6e6e6ff;
+}
+footer .zen-validate-css {
+  background: #fff url(yellow-splat.svg) no-repeat center;
+  padding: 2.75em;
+  background-size: contain;
+  color: #e6e6e6ff;
+}
+footer .zen-license {
+  background: #fff url(splat.svg) no-repeat center;
+  padding: 2.75em;
+  background-size: contain;
+  color: #e6e6e6ff;
+}
+footer .zen-accessibility {
+  background: #fff url(green-splat.svg) no-repeat center;
+  padding: 2.75em;
+  background-size: contain;
+  color: #e6e6e6ff;
+}
+footer .zen-github {
+  background: #fff url(purple-splat.svg) no-repeat center;
+  padding: 2.75em;
+  background-size: contain;
   color: #e6e6e6ff;
 }
 
@@ -93,33 +159,44 @@ header h2 {
   font-family: "open Sans", "Arial", sans-serif;
 }
 
-.sidebar ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.requirements p:last-child {
-  font: 1.5em "Lobster Two", serif;
-  padding: 10px;
-  background: #700c9e;
-  color: #e6e6e6ff;
+/*.wrapper {
+  display:flex;
+  flex-flow: column-reverse;
+}*/
+.design-selection {
   text-align: center;
 }
 
 .design-name {
-  display: table;
+  display: block;
   font: 1.5em "Lobster Two", serif;
 }
 
 .designer-name {
   margin: 0 0 1em 0;
-  display: inline-block;
+  display: block;
 }
 
+.zen-resources {
+  background: #fff url(purple-arch-splat.svg) no-repeat center;
+  background-size: cover;
+  padding: 6em 0 1em 0;
+  margin: 0;
+  text-align: center;
+}
 .zen-resources ul {
+  margin: 2em 0;
+  padding: 1em 2em;
   display: flex;
-  font-size: 0.75em;
+  flex-flow: row;
+  justify-content: space-between;
+  font-size: 0.5em;
+}
+.zen-resources li {
+  padding-top: 1.5em;
+}
+.zen-resources li a {
+  color: #e6e6e6ff;
 }
 .zen-resources h3 {
   display: none;
@@ -131,22 +208,18 @@ header h2 {
 
 .design-archives ul li:last-child {
   font: 2em "Lobster Two", serif;
-  width: 70%;
-  height: 100px;
-  background: #fce028;
-  border-radius: 50%;
-  color: #e6e6e6ff;
-  margin: 50px auto;
-  padding: 40px 0 0;
+  color: #00000c;
   text-align: center;
+  margin-top: 1.5em;
 }
 
+/*
 @media screen and (min-width: 32em) {
   .design-selection ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px 40px;
   }
-}
+}*/
 
 /*# sourceMappingURL=style.css.map */
