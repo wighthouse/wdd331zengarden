@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Open+Sans&display=swap');
+
+
+//variables
+$font-header: "Lobster Two",
+serif;
+$font-main: "open Sans",
+'Arial',
+sans-serif;
+$blue: #1446a0;
+$green: #147a6c;
+$yellow: #fce028;
+$purple: #700c9e;
+$red: #db2020;
+$white: #e6e6e6ff;
+$black: #00000c;
+
+//grid-variables
+//$num-columns : 1;
+//$one-column : 100% / $num_columns;
+//$loop-start: 1;
+//$loop-end: $num-columns + 1;
+//$one-column: 12.5%;
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* basic elements */
+body {
+    font-family: $font-main;
+    color: $black;
+    width: 100%;
+}
+
+p {
+    margin-top: 0;
+    text-align: left;
+}
+
+h3 {
+    font: 1.5em $font-header;
+    color: $black;
+    padding: 1.5em 0 .25em 0;
+}
+
+a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color: $black;
+}
+
+a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: $green;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
+    color: #9685BA;
+}
+
+/* specific divs */
+.page-wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+}
+
+header {
+    margin: 0 auto;
+    background: #fff url(drips.svg) repeat-x 100%;
+    background-size: contain;
+    height: 15em;
+    text-align: center;
+
+    h1 {
+        padding-top: .5em;
+        font: 1.25em $font-main;
+        color: $white;
+
+        &::after {
+            display: block;
+            padding-top: .5em;
+            font: 2.25em $font-header;
+            color: $white;
+            content: "The Painted Garden"
+        }
+    }
+
+    h2 {
+        padding-top: .5em;
+        font: 1.25em $font-main;
+        color: $white;
+    }
+}
+
+.preamble,
+.participation,
+.benefits,
+.requirements {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.summary p:first-child {
+    font: 1em $font-main;
+    padding: 20px;
+    text-align: center;
+}
+
+.summary p:nth-child(2) {
+    width: 40%;
+    margin: 0 auto;
+    background: #fff url(splat.svg) no-repeat center;
+    background-size: contain;
+    padding: 90px;
+    text-align: center;
+}
+
+.explanation {
+    background: url(red-drips.svg) no-repeat center;
+    background-size: cover;
+    padding: 20px 20px 90px;
+    color: $white;
+    margin-top: 2em;
+    height: 420px;
+
+    h3 {
+        padding: 0 0 .25em 0;
+        color: $white;
+    }
+}
+
+.requirements p:last-child {
+    font-weight: bold;
+    text-align: center;
+    padding: 2em;
+}
+
+footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    font-size: .5em;
+
+    .zen-validate-html {
+        background: url(blue-splat.svg) no-repeat center;
+        padding: 2.75em;
+        background-size: contain;
+        color: $white;
+    }
+
+    .zen-validate-css {
+        background: url(yellow-splat.svg) no-repeat center;
+        padding: 2.75em;
+        background-size: contain;
+        color: $white;
+    }
+
+    .zen-license {
+        background: url(splat.svg) no-repeat center;
+        padding: 2.75em;
+        background-size: contain;
+        color: $white;
+    }
+
+    .zen-accessibility {
+        background: url(green-splat.svg) no-repeat center;
+        padding: 2.75em;
+        background-size: contain;
+        color: $white;
+    }
+
+    .zen-github {
+        background: url(purple-splat.svg) no-repeat center;
+        padding: 2.75em;
+        background-size: contain;
+        color: $white;
+    }
+}
+
+.sidebar .wrapper {
+    font-family: $font-main;
+}
+
+.design-selection {
+    text-align: center;
+}
+
+.design-name {
+    display: block;
+    font: 1.5em $font-header;
+}
+
+.designer-name {
+    margin: 0 0 1em 0;
+    display: block;
+}
+
+.zen-resources {
+    background: #fff url(purple-arch-splat.svg) no-repeat center;
+    background-size: cover;
+    padding: 6em 0 1em 0;
+    margin: 0;
+    text-align: center;
+
+    ul {
+        margin: 2em 0;
+        padding: 1em 2em;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        font-size: 0.5em;
+    }
+
+    li {
+        padding-top: 1.5em;
+
+        a {
+            color: $white;
+        }
+    }
+
+    h3 {
+        display: none;
+    }
+}
+
+.design-archives h3,
+.design-archives ul li:first-child {
+    display: none;
+}
+
+.design-archives ul li:last-child {
+    font: 2em $font-header;
+    color: $black;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+@import 'medium';
+@import 'large';
+@import 'grid';

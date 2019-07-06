@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two|Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* basic elements */
+body {
+  font-family: "open Sans", "Arial", sans-serif;
+  color: #00000c;
+  width: 100%;
+}
+
+p {
+  margin-top: 0;
+  text-align: left;
+}
+
+h3 {
+  font: 1.5em "Lobster Two", serif;
+  color: #00000c;
+  padding: 1.5em 0 0.25em 0;
+}
+
+a:link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #00000c;
+}
+
+a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: #147a6c;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+  color: #9685BA;
+}
+
+/* specific divs */
+.page-wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+}
+
+header {
+  margin: 0 auto;
+  background: #fff url(drips.svg) repeat-x 100%;
+  background-size: contain;
+  height: 15em;
+  text-align: center;
+}
+header h1 {
+  padding-top: 0.5em;
+  font: 1.25em "open Sans", "Arial", sans-serif;
+  color: #e6e6e6ff;
+}
+header h1::after {
+  display: block;
+  padding-top: 0.5em;
+  font: 2.25em "Lobster Two", serif;
+  color: #e6e6e6ff;
+  content: "The Painted Garden";
+}
+header h2 {
+  padding-top: 0.5em;
+  font: 1.25em "open Sans", "Arial", sans-serif;
+  color: #e6e6e6ff;
+}
+
+.preamble,
+.participation,
+.benefits,
+.requirements {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.summary p:first-child {
+  font: 1em "open Sans", "Arial", sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.summary p:nth-child(2) {
+  width: 40%;
+  margin: 0 auto;
+  background: #fff url(splat.svg) no-repeat center;
+  background-size: contain;
+  padding: 90px;
+  text-align: center;
+}
+
+.explanation {
+  background: url(red-drips.svg) no-repeat center;
+  background-size: cover;
+  padding: 20px 20px 90px;
+  color: #e6e6e6ff;
+  margin-top: 2em;
+  height: 420px;
+}
+.explanation h3 {
+  padding: 0 0 0.25em 0;
+  color: #e6e6e6ff;
+}
+
+.requirements p:last-child {
+  font-weight: bold;
+  text-align: center;
+  padding: 2em;
+}
+
+footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  font-size: 0.5em;
+}
+footer .zen-validate-html {
+  background: url(blue-splat.svg) no-repeat center;
+  padding: 2.75em;
+  background-size: contain;
+  color: #e6e6e6ff;
+}
+footer .zen-validate-css {
+  background: url(yellow-splat.svg) no-repeat center;
+  padding: 2.75em;
+  background-size: contain;
+  color: #e6e6e6ff;
+}
+footer .zen-license {
+  background: url(splat.svg) no-repeat center;
+  padding: 2.75em;
+  background-size: contain;
+  color: #e6e6e6ff;
+}
+footer .zen-accessibility {
+  background: url(green-splat.svg) no-repeat center;
+  padding: 2.75em;
+  background-size: contain;
+  color: #e6e6e6ff;
+}
+footer .zen-github {
+  background: url(purple-splat.svg) no-repeat center;
+  padding: 2.75em;
+  background-size: contain;
+  color: #e6e6e6ff;
+}
+
+.sidebar .wrapper {
+  font-family: "open Sans", "Arial", sans-serif;
+}
+
+.design-selection {
+  text-align: center;
+}
+
+.design-name {
+  display: block;
+  font: 1.5em "Lobster Two", serif;
+}
+
+.designer-name {
+  margin: 0 0 1em 0;
+  display: block;
+}
+
+.zen-resources {
+  background: #fff url(purple-arch-splat.svg) no-repeat center;
+  background-size: cover;
+  padding: 6em 0 1em 0;
+  margin: 0;
+  text-align: center;
+}
+.zen-resources ul {
+  margin: 2em 0;
+  padding: 1em 2em;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  font-size: 0.5em;
+}
+.zen-resources li {
+  padding-top: 1.5em;
+}
+.zen-resources li a {
+  color: #e6e6e6ff;
+}
+.zen-resources h3 {
+  display: none;
+}
+
+.design-archives h3,
+.design-archives ul li:first-child {
+  display: none;
+}
+
+.design-archives ul li:last-child {
+  font: 2em "Lobster Two", serif;
+  color: #00000c;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+@media screen and (min-width: 667px) {
+  .summary p:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 50%;
+  }
+
+  .explanation {
+    background: url(red-drips-medium.svg) no-repeat center;
+    background-size: cover;
+    height: 340px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+  footer .zen-validate-html {
+    color: #00000c;
+  }
+  footer .zen-validate-css {
+    color: #00000c;
+  }
+  footer .zen-license {
+    color: #00000c;
+  }
+  footer .zen-accessibility {
+    color: #00000c;
+  }
+  footer .zen-github {
+    color: #00000c;
+  }
+
+  .zen-resources {
+    background: url(purple-arch-splat.svg) no-repeat center;
+    background-size: cover;
+    height: 255px;
+  }
+  .zen-resources ul {
+    padding-top: 150px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .explanation {
+    background: url(red-drips-large.svg) no-repeat center;
+    background-size: cover;
+    height: 420px;
+  }
+}
+.sidebar {
+  display: grid;
+  width: 250px;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+}
+
+/*# sourceMappingURL=style.css.map */
