@@ -6,6 +6,7 @@
     grid-template-columns: 60% 1fr;
     grid-template-rows: 3fr;
     grid-gap: 10px;
+  }
     h3 {
       font: 2em "Lobster Two", serif;
     }
@@ -75,10 +76,18 @@
       display: flex;
       flex-flow: column;
       padding-top: 20em;
-      background-color: $yellow;
+     
+      /*background-color: $yellow;*/
+      background-image: url(brush-1318350_640.png); /*--Image by <a href="https://pixabay.com/users/Elionas-2345468/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1318350">
+      Elias Schäfer</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1318350">Pixabay</a>*/
+      background-repeat: no-repeat;
+     background-position-y: 810px;
+     background-position-x: 50%;
+      background-attachment: scroll;
       .design-selection ul {
         display: flex;
         flex-flow: column;
+        
       }
       .zen-resources {
         background: unset;
@@ -99,4 +108,3 @@
       }
     }
   }
-}
